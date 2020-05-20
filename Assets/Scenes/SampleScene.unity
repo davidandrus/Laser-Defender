@@ -382,6 +382,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4550740148466816546, guid: 52eddb29ed55ebe44b8d5809d9c023b2,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550740148466816546, guid: 52eddb29ed55ebe44b8d5809d9c023b2,
+        type: 3}
+      propertyPath: shootDelay
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 4550740148466816549, guid: 52eddb29ed55ebe44b8d5809d9c023b2,
         type: 3}
       propertyPath: m_LocalPosition.x

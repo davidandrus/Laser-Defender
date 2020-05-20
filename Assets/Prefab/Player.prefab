@@ -94,6 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c469efda500994f883f74989b36005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 10
-  _boundsPadding: 1
-  _laser: {fileID: 1069622900692220167, guid: dc0deacdca785e74f9ef6d9b478c069d, type: 3}
+  moveSpeed: 0
+  boundsPadding: 1
+  laserVelocity: 10
+  laserPrefab: {fileID: 1069622900692220167, guid: dc0deacdca785e74f9ef6d9b478c069d,
+    type: 3}
+  shootDelay: 0.1
