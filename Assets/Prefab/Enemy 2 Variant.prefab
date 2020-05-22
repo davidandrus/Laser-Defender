@@ -12,6 +12,16 @@ PrefabInstance:
       propertyPath: health
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 5712738287556385972, guid: 0f35174365832604cac686c4fe100487,
+        type: 3}
+      propertyPath: laserVelocity
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712738287556385972, guid: 0f35174365832604cac686c4fe100487,
+        type: 3}
+      propertyPath: maxTimeBetweenShots
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6347915812040111020, guid: 0f35174365832604cac686c4fe100487,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -78,5 +88,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 9771511f44d80ff44a6b1aaae1ea95fd,
         type: 3}
+    - target: {fileID: 6981852304262805893, guid: 0f35174365832604cac686c4fe100487,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.04
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f35174365832604cac686c4fe100487, type: 3}

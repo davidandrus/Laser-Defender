@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8856535222197743470}
   - component: {fileID: 5712738287556385972}
   - component: {fileID: 6981852304262805893}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 053c469d3f818cb43963ebadb29d8776, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -109,6 +109,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 2
+  laserPrefab: {fileID: 7226230476294236251, guid: 40f406424118bd640ad1ce3711645cb9,
+    type: 3}
+  laserVelocity: 12
 --- !u!61 &6981852304262805893
 BoxCollider2D:
   m_ObjectHideFlags: 0
