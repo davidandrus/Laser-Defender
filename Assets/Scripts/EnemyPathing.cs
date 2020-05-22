@@ -1,25 +1,26 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyPathing : MonoBehaviour
 {
-    [SerializeField] WaveConfig waveConfig;
-    [SerializeField] float moveSpeed = 2f;
+    WaveConfig waveConfig;
 
-    // Start is called before the first frame update
     int waypointIndex = 0;
     private List<Transform> waypoints;
+    private float moveSpeed;
 
     void Start()
     {
         waypoints = waveConfig.GetWaypoints();
-        Debug.Log(waypoints);
+        moveSpeed = waveConfig.GetMoveSpeed();
         transform.position = waypoints[waypointIndex].position;
     }
 
-    // Update is called once per frame
+    public void SetWaveConfig(WaveConfig waveConfig)
+    {
+        this.waveConfig = waveConfig;
+    }
+
     void Update()
     {
         if (waypointIndex <= waypoints.Count - 1) {
