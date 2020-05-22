@@ -7,15 +7,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5712738287556385972, guid: 0f35174365832604cac686c4fe100487,
+        type: 3}
+      propertyPath: health
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 6347915812040111020, guid: 0f35174365832604cac686c4fe100487,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6347915812040111020, guid: 0f35174365832604cac686c4fe100487,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.94
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6347915812040111020, guid: 0f35174365832604cac686c4fe100487,
         type: 3}
@@ -65,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 6347915812040111022, guid: 0f35174365832604cac686c4fe100487,
         type: 3}
       propertyPath: m_Name
-      value: Enemy 2
+      value: Enemy 2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6347915812040111023, guid: 0f35174365832604cac686c4fe100487,
         type: 3}
