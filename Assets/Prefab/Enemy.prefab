@@ -115,6 +115,8 @@ MonoBehaviour:
   laserPrefab: {fileID: 7226230476294236251, guid: 40f406424118bd640ad1ce3711645cb9,
     type: 3}
   laserVelocity: 12
+  explosionPrefab: {fileID: 2592979442599323206, guid: 7fbec134db78a1342926b14a55146982,
+    type: 3}
 --- !u!61 &6981852304262805893
 BoxCollider2D:
   m_ObjectHideFlags: 0

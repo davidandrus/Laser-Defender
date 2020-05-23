@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] float maxTimeBetweenShots = 3f;
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float laserVelocity = 7f;
+    [SerializeField] GameObject explosionPrefab;
+    [SerializeField] float explosionDuration = 1f;
 
 
     private void Start()
@@ -33,7 +36,7 @@ public class Enemy : MonoBehaviour
 
     private void SetShotCounter()
     {
-        shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
+        shotCounter = UnityEngine.Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
     }
 
     private void Fire()
@@ -45,7 +48,6 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        Debug.Log("Collision occurred");
         DamageDealer damageDealer = collision.gameObject.GetComponent<DamageDealer>();
         ProcessHit(damageDealer);
     }
@@ -56,7 +58,15 @@ public class Enemy : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Explode();
         }
+    }
+
+    private void Explode()
+    {
+
+        var explosion = Instantiate(explosionPrefab, gameObject.transform.position, Quaternion.identity);
+        Destroy(gameObject);
+        Destroy(explosion, explosionDuration);
     }
 }
