@@ -114,9 +114,12 @@ MonoBehaviour:
   maxTimeBetweenShots: 2
   laserPrefab: {fileID: 7226230476294236251, guid: 40f406424118bd640ad1ce3711645cb9,
     type: 3}
+  laserSound: {fileID: 8300000, guid: cbaf30561820ed544a8eb25f8f1ce70b, type: 3}
   laserVelocity: 12
   explosionPrefab: {fileID: 2592979442599323206, guid: 7fbec134db78a1342926b14a55146982,
     type: 3}
+  explosionDuration: 1
+  explosionSound: {fileID: 8300000, guid: a6c17455e7c4de94d9805f931f4260fc, type: 3}
 --- !u!61 &6981852304262805893
 BoxCollider2D:
   m_ObjectHideFlags: 0
